@@ -40,6 +40,7 @@ class LoginForm extends Component {
       <App>
         <h3>Login</h3>
         <AuthForm
+          isLoginPage={true}
           errors={this.state.errors}
           onSubmit={this.onSubmit.bind(this)}
         />

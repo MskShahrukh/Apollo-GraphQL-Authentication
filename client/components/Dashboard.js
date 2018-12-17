@@ -14,6 +14,16 @@ class Dashboard extends Component {
     if (data.user) {
       return (
         <div>
+          <div>
+            <img className="display-picture " src={data.user.displayPicture} />
+          </div>
+          <h3>
+            <b>{data.user.name}</b>
+          </h3>
+          <p>
+            Bio: <br />
+            <b>{data.user.bio}</b>
+          </p>
           <p>
             logged in with email : <br />
             <b>{data.user.email}</b>
